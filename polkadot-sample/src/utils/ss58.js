@@ -42,9 +42,12 @@ function ss58_encode(address) {
     return null
   }
   // let bytes = new Uint8Array([42, ...address])
+
   let bytes = new Uint8Array([00, ...address])
   // let bytes = new Uint8Array([02, ...address])
-  let hash = blake2b(address)
+  let hash = blake2b(new Uint8Array([53533538505245, ...bytes]))
+  console.log((53533538505245).toString(''))
+  console.log("hash: ", Buffer.from(hash).toString('hex'))
 
   // let bytes = new Uint8Array([42, ...hash])
 

@@ -28,9 +28,10 @@ async function tx() {
   console.log('- specVersion: ', runtimeVersion.specVersion.toString());
   console.log('- transactionVersion: ', runtimeVersion.transactionVersion.toString());
 
-  // const metadata = await api.rpc.state.getMetadata()
-  // console.log('- metadata ', metadata.toHex());
-  // console.log('- magicNumber ', metadata.magicNumber.toString());
+  const metadata = await api.rpc.state.getMetadata()
+  // console.log('- metadata ', metadata.toHex()); 
+  console.log('- metadata ', metadata.values());
+  console.log('- magicNumber ', metadata.magicNumber.toString());
 
   /* -- Add our from dev account -- */
   const keyring = new Keyring({ type: "ecdsa", ss58Format: 0 });
@@ -40,7 +41,6 @@ async function tx() {
   console.log('- name: ', FROM.meta.name);
   console.log('- from address: ', FROM.address);
   console.log('- publicKey: ', Buffer.from(FROM.publicKey).toString('hex'));
-  console.log('- publicKey: ', FROM.publicKey)
 
   /* -- Retrieve the account balance & nonce via the system module -- */
   const { nonce, data: balance } = await api.query.system.account(FROM.address);
@@ -57,12 +57,7 @@ async function tx() {
   // const hash = await transfer.signAndSend(FROM);
   const hash = await transfer.signAsync(FROM);
 
-  console.log('- hash: ', hash);
-  
-  const hash2 = await transfer.send();
-
-  console.log('- hash2: ', hash2);
-
+  console.log('- hash: ', hash.toString());
   api.disconnect()
 }
 
