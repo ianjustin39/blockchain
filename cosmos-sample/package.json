@@ -9,6 +9,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@cosmostation/cosmosjs": "^0.8.0"
+    "@cosmostation/cosmosjs": "^0.8.0",
+    "@tendermint/amino-js": "^0.6.2",
+    "@tendermint/belt": "^0.3.0"
   }
 }
