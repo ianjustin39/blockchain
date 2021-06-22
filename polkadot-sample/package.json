@@ -9,14 +9,14 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@polkadot/api": "^3.11.1",
-    "@polkadot/keyring": "^5.6.3",
+    "@polkadot/api": "^4.13.1",
+    "@polkadot/keyring": "^5.9.2",
     "@polkadot/ui-keyring": "^0.69.1",
-    "@polkadot/util": "^6.0.5",
+    "@polkadot/util": "^6.7.1",
     "@polkadot/wasm-crypto": "^4.0.2",
-    "@substrate/txwrapper": "^3.10.10",
+    "@substrate/txwrapper": "^3.10.12",
     "bip32": "^2.0.6",
-    "bip39": "^3.0.3",
+    "bip39": "^3.0.4",
     "blake2": "^4.0.2",
     "blakejs": "^1.1.0",
     "bn.js": "^5.2.0",
@@ -25,6 +25,6 @@
     "elliptic": "^6.5.4",
     "js-sha256": "^0.9.0",
     "node-fetch": "^2.6.1",
-    "pbkdf2": "^3.1.1"
+    "pbkdf2": "^3.1.2"
   }
 }

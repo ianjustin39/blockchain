@@ -2,7 +2,7 @@
 const { decodeAddress, encodeAddress } = require('@polkadot/keyring');
 const { hexToU8a, isHex } = require('@polkadot/util');
 
-const address = '1E6yt2VuSzcN2ErpBFBQj5XHXpZ2CcBGc8gT23wKXsqbewcf';
+const address = 'FyMNEdUVc87aMeVLatctP1wSzk7DMU24KsV3vyLyGx6fnQq';
 
 const isValidAddressPolkadotAddress = () => {
   try {

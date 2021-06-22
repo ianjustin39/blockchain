@@ -45,7 +45,7 @@ const App = async () => {
   const network = tron.getNetwork(tron.net.TEST_NET);
 
   // create an instance of tron web
-  const tronWeb = tron.createTronWebInstance(priKeyHex, network);
+  const tronWeb = tron.createTronWebInstance(priKeyHex, network)
 
   // derive address from private key with tron web
   const derivedAddress = tronWeb.address.fromPrivateKey(priKeyHex);

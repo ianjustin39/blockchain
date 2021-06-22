@@ -1,11 +1,12 @@
 
 // Import
 const { Keyring } = require('@polkadot/keyring');
-const MNEMONIC = 'maze drum fatal beyond convince brand erode aisle word since art render';
+// const MNEMONIC = 'maze drum fatal beyond convince brand erode aisle word since art render'; // 原本的
+const MNEMONIC = 'blade chat bulk bird brand margin crisp swim illness trick bag joke';
 
 // type: ed25519, ssFormat: 42 (all defaults)
-const keyring = new Keyring({ type: "ecdsa" });
-// const keyring = new Keyring();
+// const keyring = new Keyring({ type: "ecdsa" });
+const keyring = new Keyring({ type: "sr25519", ss58Format: 2 });;
 const pair = keyring.createFromUri(MNEMONIC);
 
 console.log(`- publicKey: ${Buffer.from(pair.publicKey).toString('hex')}`)
