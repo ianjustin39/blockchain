@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/ianjustin39/blockchain/issues"
   },
-  "homepage": "https://github.com/ianjustin39/blockchain#readme"
+  "homepage": "https://github.com/ianjustin39/blockchain#readme",
+  "dependencies": {
+    "bitcoinjs-lib": "^5.2.0"
+  }
 }
