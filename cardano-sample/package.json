@@ -9,6 +9,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@ipld/dag-cbor": "^6.0.9",
+    "@multiformats/blake2": "^1.0.5",
+    "cardano-addresses": "^3.5.0",
     "cardano-crypto.js": "^6.0.0"
   },
   "devDependencies": {}
