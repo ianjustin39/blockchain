@@ -1,7 +1,7 @@
 const { encodeAddress, decodeAddress } = require('@polkadot/keyring');
 const util = require('@polkadot/util-crypto');
 
-const zero = '0x' + '88d38dd7b7e450c426b33bd49db5efe92e702e0c799a5adab42be4fb21ed7566';
+const zero = '0x' + '8eaf04151687736326c9fea17e25fc5287613693c912909cb226aa4794f26a48';
 const output = encodeAddress(zero, 2);
 console.log(output.toString());
 
